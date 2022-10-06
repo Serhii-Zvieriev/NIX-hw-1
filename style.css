@@ -1,0 +1,28 @@
+.check {
+margin-bottom: 20px;
+}
+
+/* label {
+  display: block;
+} */
+
+/* .check-first, .check-second
+ {
+    display: block;
+} */
+
+/* .check-first, .check-second:checked{
+color: #ff0000;
+}
+
+.radio_1, .radio_2:checked{
+color: #ff0000;
+} */
+
+input[type="radio"]:checked + label, label:active {
+  color: #ff0000;
+}
+
+/* .radio_1:checked + label, label:active{
+    color: #ff0000;
+} */
