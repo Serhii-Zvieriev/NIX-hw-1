@@ -1,28 +1,137 @@
+.flex {
+  display: flex;
+}
+
+.task1 {
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  width: 200px;
+  border: 1px solid #353585;
+}
+
+.task2 {
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  width: 200px;
+
+  border: 1px solid #227040;
+  background-color: rgb(192, 221, 221);
+}
+
+.task3 {
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+
+  width: 200px;
+  border: 1px solid #353585;
+}
+
 .check {
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-/* label {
-  display: block;
-} */
-
-/* .check-first, .check-second
- {
-    display: block;
-} */
-
-/* .check-first, .check-second:checked{
-color: #ff0000;
-}
-
-.radio_1, .radio_2:checked{
-color: #ff0000;
-} */
-
-input[type="radio"]:checked + label, label:active {
+/*========== Task 1 ==========*/
+.task1 input[type='radio']:checked + label,
+.task1 input[type='checkbox']:checked + label,
+label:active {
   color: #ff0000;
 }
 
-/* .radio_1:checked + label, label:active{
-    color: #ff0000;
-} */
+/*========== Task 2 ==========*/
+.task2 p {
+  margin-left: 10px;
+}
+
+.task2 p::first-letter {
+  font-family: 'Tahoma', serif;
+  /* font-size: 20px; */
+  color: #57ac6c;
+}
+
+.task2 li:nth-child(3n) p {
+  color: #ffff00;
+}
+
+.task2 li:nth-child(5n):hover {
+  background-color: #ff0000;
+}
+
+.task2 ul {
+  list-style-type: '\2622';
+}
+
+/*========== Task 3 ==========*/
+.task3 p.new:before {
+  margin-right: 10px;
+  content: '\2620';
+  color: #c7166e;
+}
+
+.task3 p.new.back:after {
+  margin-left: 10px;
+  content: '\2623';
+  color: #c7166e;
+}
+
+.task3 abbr {
+  display: block;
+}
+.task3 abbr:first-line {
+  color: #c7166e;
+}
+
+.task3 div:before:first-letter {
+  /* The ::first-letter CSS pseudo-element applies styles to the first letter of the first line of a block-level element, but only when not preceded by other content (such as images or inline tables).
+  :before - не являеться блочным элементом, по этому :first-letter нельзя применить к :before
+  */
+}
+
+.task3 a:hover:before {
+  content: '\262E';
+  color: #20ca37;
+}
+
+/*========== Task 4 ==========*/
+.task4 {
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 200px;
+
+  border: 1px solid #227040;
+  background: repeating-linear-gradient(45deg, #7fffd4 10%, #f0ffff 30%);
+}
+
+.task4 a {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.task4 div a[href="https://htmlweb.ua/"]
+{
+  color: violet;
+}
+
+.task4 div a[href="https://htmlweb.ua/"]:first-child
+{
+  background: repeating-radial-gradient(circle at bottom, #ec6308 10%, #301769 30%);
+}
+
+.task4 div a[href$='/css']:nth-child(2):hover {
+  border: 5px solid;
+  border-color: brown orange orange brown;
+  border-radius: 50% 20% / 10% 40%;
+}
+
+.task4 div a + a:visited {
+  color: #ffff00;
+}
+
+.task4 div a:last-child::selection {
+  /* font-weight: 900; - ::selection не поддерживает изменение толщены текста*/
+  color: red;
+  background-color: green;
+}

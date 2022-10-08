@@ -1,43 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>NIX-HW-1</title>
-</head>
+  </head>
 
-<body>
-    <section>
-        <h2> Task 1</h2>
+  <body>
+    <div class="flex">
+      <section class="task1">
+        <h2>Task 1</h2>
         <div class="check">
-            <label>
-                <input class="check-first" type="checkbox" name="first" value="first" checked />
-                Первый чекбокс
-            </label>
-            <label>
-                <input class="check-second" type="checkbox" name="second" value="second" />
-                Второй чекбокс
-            </label>
+          <div>
+            <input
+              id="firstInput"
+              class="check-first"
+              type="checkbox"
+              name="first"
+              value="first"
+              checked
+            />
+            <label for="firstInput"> Первый чекбокс </label>
+          </div>
+          <div>
+            <input
+              id="secondInput"
+              class="check-second"
+              type="checkbox"
+              name="second"
+              value="second"
+            />
+            <label for="secondInput">Второй чекбокс </label>
+          </div>
         </div>
         <div>
-            <!-- <label>
-                <input class="radio_1" type="radio" name="radio" value="radio_1" />
-                Радио
-            </label>
-            <label>
-                <input class="radio_2" type="radio" name="radio" value="radio_2" checked />
-                Радио
-            </label> -->
-            <input class="radio_1" type="radio" id="r1" name="radio" value="radio_1">
-            <label for="r1">Радио</label>
-            <input class="radio_2" type="radio" id="r2" name="radio" value="radio_2" checked>
-            <label for="r2">Радио</label>
-
+          <input class="radio_1" type="radio" id="r1" name="radio" value="radio_1" />
+          <label for="r1">Радио</label>
+          <input class="radio_2" type="radio" id="r2" name="radio" value="radio_2" checked />
+          <label for="r2">Радио</label>
         </div>
-    </section>
-</body>
-
+      </section>
+      <section class="task2">
+        <h2>Task 2</h2>
+        <ul>
+          <li>
+            <p>01</p>
+          </li>
+          <li>
+            <p>02</p>
+          </li>
+          <li>
+            <p>Красный</p>
+          </li>
+          <li>
+            <p>04</p>
+          </li>
+          <li>
+            <p>05</p>
+          </li>
+          <li>
+            <p>Красный</p>
+          </li>
+          <li>
+            <p>07</p>
+          </li>
+          <li>
+            <p>08</p>
+          </li>
+          <li>
+            <p>Красный</p>
+          </li>
+          <li>
+            <p>10</p>
+          </li>
+          <li>
+            <p>11</p>
+          </li>
+          <li>
+            <p>Крассный</p>
+          </li>
+        </ul>
+      </section>
+      <section class="task3">
+        <h2>Task 3</h2>
+        <p class="new back">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, praesentium.
+        </p>
+        <p>
+          <abbr title="многоцелевой транспортёр-тягач лёгкий бронированный, «Объект 6»">МТ-ЛБ</abbr>
+          советская и болгарская боевая машина, многоцелевой плавающий бронетранспортёр
+        </p>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, odio?</div>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::first-letter"
+          >::first-letter (:first-letter)</a
+        >
+      </section>
+      <section class="task4">
+        <div>
+          <a href="http://htmlbook/css">Перше посилання </a>
+          <a href="http://htmlbook.ua/css">Друге посилання</a>
+          <a href="https://htmlweb.ua/">Третє посилання</a>
+          <!-- <a href="https://store.steampowered.com">a</a> -->
+          <!-- <a href="https:/store.steampowered.com">a</a> -->
+          <div>
+            <a href="http://htmlbook.ua/css">Четверте посилання</a>
+            <div>
+              <a href="http://htmlbook.ua/css">П’яте посилання</a>
+              <div>
+                <a href="https://htmlweb.ua/">Шосте посилання</a>
+              </div>
+              <a href="https://htmlweb.ua/">Сьоме посилання</a>
+            </div>
+            <a href="http://htmlbook.ua/css">Восьме посилання</a>
+          </div>
+        </div>
+      </section>
+      <section class="task5">
+        <!-- https://basicweb.ru/css/css_pseudo.php - ссылка не рабочая!!! -->
+      </section>
+    </div>
+  </body>
 </html>
